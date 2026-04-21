@@ -68,8 +68,9 @@ public class PayrollCalculatorApp {
 
                 bufWriter.write(employee.getEmployeeID() + " | " + employee.getName() + " | " + employee.getGrossPay() + "\n");
             }
-            fileWriter.close();
             bufWriter.close();
+            theFile.close();
+            fileReader.close();
 
         } catch (Exception e) {
             System.out.println("File not found.");
