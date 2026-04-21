@@ -50,7 +50,7 @@ public class PayrollCalculatorApp {
                 //call the gross pay method on the employees to print out their gross pay
                 //System.out.println(line);
 
-                System.out.println(employee.getName() + " gross pay: " + employee.getGrossPay());
+                System.out.printf("ID: %d | %s's gross pay: %.2f\n", employee.getEmployeeID(), employee.getName(), employee.getGrossPay());
             }
         } catch (Exception e) {
             throw new RuntimeException(e);
